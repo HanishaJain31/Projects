@@ -1,0 +1,290 @@
+.page {
+  margin: 2.5rem;
+  padding: 2.5rem 5rem 5rem;
+  background-color: var(--color-dark--1);
+  min-height: calc(100vh - 5rem);
+}
+
+.hero {
+  width: min(110rem, 100%);
+  margin: 6rem auto 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(30rem, 0.95fr);
+  gap: 5rem;
+  align-items: center;
+}
+
+.hero img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.kicker {
+  color: var(--color-brand--2);
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: 4.4rem;
+  line-height: 1.1;
+  margin-bottom: 2.4rem;
+}
+
+.hero p {
+  color: var(--color-light--3);
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.grid {
+  width: min(110rem, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.card,
+.stat,
+.summary,
+.chartPanel {
+  background-color: var(--color-dark--2);
+  border-radius: 8px;
+}
+
+.card {
+  padding: 2.2rem;
+}
+
+.card h2,
+.summary h2 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 1rem;
+}
+
+.card p,
+.summary p {
+  color: var(--color-light--3);
+  font-size: 1.5rem;
+}
+
+.statsPanel {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.4rem;
+}
+
+.stat {
+  min-height: 12rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stat strong {
+  color: var(--color-brand--1);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.stat span {
+  color: var(--color-light--3);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-top: 0.8rem;
+  text-transform: uppercase;
+}
+
+.summary {
+  width: min(110rem, 100%);
+  margin: 0 auto 4rem;
+  padding: 2.4rem;
+}
+
+.split {
+  width: min(110rem, 100%);
+  margin: 4rem auto;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(30rem, 1.1fr);
+  gap: 4rem;
+  align-items: start;
+}
+
+.split h2,
+.banner h2 {
+  font-size: 3rem;
+  line-height: 1.15;
+  margin-bottom: 1.4rem;
+}
+
+.split p {
+  color: var(--color-light--3);
+  font-size: 1.6rem;
+}
+
+.steps {
+  counter-reset: step;
+  list-style: none;
+  display: grid;
+  gap: 1.4rem;
+}
+
+.steps li {
+  background-color: var(--color-dark--2);
+  border-radius: 8px;
+  color: var(--color-light--3);
+  counter-increment: step;
+  font-size: 1.6rem;
+  padding: 2rem 2rem 2rem 6rem;
+  position: relative;
+}
+
+.steps li::before {
+  content: counter(step);
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--color-brand--2);
+  border-radius: 50%;
+  color: var(--color-dark--0);
+  display: grid;
+  font-size: 1.4rem;
+  font-weight: 900;
+  left: 2rem;
+  place-items: center;
+  position: absolute;
+  top: 1.6rem;
+}
+
+.countryCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.countryCloud span,
+.countryCloud p {
+  background-color: var(--color-dark--2);
+  border-radius: 8px;
+  color: var(--color-light--3);
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 1.2rem 1.6rem;
+}
+
+.banner {
+  width: min(110rem, 100%);
+  margin: 4rem auto 0;
+  min-height: 20rem;
+  background-color: var(--color-dark--2);
+  border-radius: 8px;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.chartsSection {
+  width: min(110rem, 100%);
+  margin: 4rem auto;
+}
+
+.sectionIntro {
+  margin-bottom: 2rem;
+}
+
+.sectionIntro h2 {
+  font-size: 3rem;
+  line-height: 1.15;
+}
+
+.chartGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.chartPanel {
+  padding: 2.4rem;
+}
+
+.chartPanel h2 {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.chartPanel p {
+  color: var(--color-light--3);
+  font-size: 1.5rem;
+}
+
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.barRow {
+  display: grid;
+  grid-template-columns: 9rem minmax(0, 1fr) 3rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.barLabel {
+  color: var(--color-light--3);
+  font-size: 1.3rem;
+  font-weight: 800;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.barTrack {
+  height: 1.2rem;
+  background-color: var(--color-dark--1);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  min-width: 0.8rem;
+  background-color: var(--color-brand--2);
+  border-radius: inherit;
+}
+
+.barRow strong {
+  color: var(--color-brand--1);
+  font-size: 1.35rem;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .page {
+    padding: 2.5rem;
+  }
+
+  .hero,
+  .grid,
+  .split,
+  .chartGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statsPanel {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

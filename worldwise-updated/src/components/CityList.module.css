@@ -1,0 +1,53 @@
+.listWrapper {
+  width: 100%;
+}
+
+.controls {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.controls input,
+.controls select {
+  width: 100%;
+  min-width: 0;
+  border: none;
+  border-radius: 7px;
+  background-color: var(--color-light--3);
+  color: var(--color-dark--1);
+  font-family: inherit;
+  font-size: 1.35rem;
+  font-weight: 600;
+  padding: 0.9rem 1rem;
+}
+
+.controls input:focus,
+.controls select:focus {
+  outline: 2px solid var(--color-brand--2);
+  background-color: #fff;
+}
+
+.cityList {
+  width: 100%;
+  max-height: none;
+  list-style: none;
+  overflow-y: visible;
+  overflow-x: hidden;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.cityList::-webkit-scrollbar {
+  width: 0;
+}
+
+@media (max-width: 700px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}
