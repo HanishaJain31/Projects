@@ -1,0 +1,86 @@
+module.exports = {
+  signup_successful: "साइनअप सफल हुआ",
+  failed_to_create_user: "उपयोगकर्ता बनाने में विफल",
+  error_during_signup: "साइनअप के दौरान त्रुटि हुई",
+
+  login_successful: "लॉगिन सफल हुआ",
+  user_not_found: "उपयोगकर्ता नहीं मिला",
+  invalid_password: "गलत पासवर्ड",
+  error_during_login: "लॉगिन के दौरान त्रुटि हुई",
+
+  password_changed_successfully: "पासवर्ड सफलतापूर्वक बदला गया",
+  invalid_old_password: "पुराना पासवर्ड गलत है",
+  new_password_cannot_be_same_as_old_password:
+    "नया पासवर्ड पुराने पासवर्ड जैसा नहीं हो सकता",
+  failed_to_change_password: "पासवर्ड बदलने में विफल",
+  error_during_password_change: "पासवर्ड बदलने के दौरान त्रुटि हुई",
+
+  logout_successful: "लॉगआउट सफल हुआ",
+  failed_to_logout: "लॉगआउट करने में विफल",
+  error_during_logout: "लॉगआउट के दौरान त्रुटि हुई",
+
+  profile_updated_successfully: "प्रोफ़ाइल सफलतापूर्वक अपडेट की गई",
+  failed_to_update_profile: "प्रोफ़ाइल अपडेट करने में विफल",
+  error_during_profile_edit: "प्रोफ़ाइल अपडेट के दौरान त्रुटि हुई",
+  no_changes_made: "कोई परिवर्तन नहीं किया गया",
+
+  email_already_exists: "ईमेल पहले से मौजूद है",
+  phone_number_already_exists: "फोन नंबर पहले से मौजूद है",
+
+  invalid_api_key: "अमान्य API कुंजी",
+  token_required: "टोकन आवश्यक है",
+  invalid_or_logged_out_token: "अमान्य या लॉगआउट किया गया टोकन",
+
+  validation_error: "मान्यकरण त्रुटि",
+
+  token_expired: "टोकन समाप्त हो गया है",
+  invalid_token: "अमान्य टोकन",
+  authentication_error: "प्रमाणीकरण त्रुटि",
+
+  invalid_token_payload: "अमान्य टोकन डेटा",
+  token_missing: "टोकन उपलब्ध नहीं है",
+
+  invalid_encrypted_data: "अमान्य एन्क्रिप्टेड डेटा",
+  decryption_failed: "डिक्रिप्शन विफल हुआ"
+,
+
+  application_not_found: "आवेदन नहीं मिला",
+  application_status_updated_successfully: "आवेदन की स्थिति सफलतापूर्वक अपडेट की गई",
+  applications_fetched_successfully: "आवेदन सफलतापूर्वक प्राप्त हुए",
+  applied_jobs_fetched_successfully: "आवेदित नौकरियां सफलतापूर्वक प्राप्त हुईं",
+  dashboard_stats: "डैशबोर्ड आंकड़े सफलतापूर्वक प्राप्त हुए",
+  dashboard_stats_fetched_successfully: "डैशबोर्ड आंकड़े सफलतापूर्वक प्राप्त हुए",
+  error_associating_skill: "कौशल जोड़ते समय त्रुटि हुई",
+  error_creating_job: "नौकरी बनाते समय त्रुटि हुई",
+  error_deleting_job: "नौकरी हटाते समय त्रुटि हुई",
+  error_during_view_profile: "प्रोफ़ाइल देखने के दौरान त्रुटि हुई",
+  error_fetching_applications: "आवेदन प्राप्त करते समय त्रुटि हुई",
+  error_fetching_dashboard_stats: "डैशबोर्ड आंकड़े प्राप्त करते समय त्रुटि हुई",
+  error_fetching_users: "उपयोगकर्ता प्राप्त करते समय त्रुटि हुई",
+  error_updating_application_status: "आवेदन स्थिति अपडेट करते समय त्रुटि हुई",
+  error_updating_job: "नौकरी अपडेट करते समय त्रुटि हुई",
+  error_updating_user_status: "उपयोगकर्ता स्थिति अपडेट करते समय त्रुटि हुई",
+  failed_to_delete_job: "नौकरी हटाने में विफल",
+  failed_to_update_application_status: "आवेदन स्थिति अपडेट करने में विफल",
+  failed_to_update_user_status: "उपयोगकर्ता स्थिति अपडेट करने में विफल",
+  forbidden_access: "प्रवेश निषिद्ध है",
+  internal_server_error: "आंतरिक सर्वर त्रुटि",
+  invalid_skill_id: "अमान्य कौशल आईडी",
+  job_application_failed: "नौकरी आवेदन विफल",
+  job_applied_successfully: "नौकरी के लिए आवेदन सफलतापूर्वक किया गया",
+  job_created_successfully: "नौकरी सफलतापूर्वक बनाई गई",
+  job_deleted_successfully: "नौकरी सफलतापूर्वक हटाई गई",
+  job_details: "नौकरी विवरण सफलतापूर्वक प्राप्त हुए",
+  job_fetched_failed: "नौकरी प्राप्त करने में विफल",
+  job_not_found: "नौकरी नहीं मिली",
+  job_updated_successfully: "नौकरी सफलतापूर्वक अपडेट की गई",
+  jobs_fetched_successfully: "नौकरियां सफलतापूर्वक प्राप्त हुईं",
+  no_applications_found: "कोई आवेदन नहीं मिला",
+  no_data_found: "कोई डेटा नहीं मिला",
+  no_jobs_found: "कोई नौकरी नहीं मिली",
+  no_stats_found: "कोई आंकड़े नहीं मिले",
+  no_user_found: "कोई उपयोगकर्ता नहीं मिला",
+  profile_fetched_successfully: "प्रोफ़ाइल सफलतापूर्वक प्राप्त हुई",
+  user_status_updated_successfully: "उपयोगकर्ता स्थिति सफलतापूर्वक अपडेट की गई",
+  users_fetched_successfully: "उपयोगकर्ता सफलतापूर्वक प्राप्त हुए"
+};

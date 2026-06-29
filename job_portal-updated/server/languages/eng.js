@@ -1,0 +1,86 @@
+module.exports = {
+  signup_successful: "Signup successful",
+  failed_to_create_user: "Failed to create user",
+  error_during_signup: "Error during signup",
+
+  login_successful: "Login successful",
+  user_not_found: "User not found",
+  invalid_password: "Invalid password",
+  error_during_login: "Error during login",
+
+  password_changed_successfully: "Password changed successfully",
+  invalid_old_password: "Invalid old password",
+  new_password_cannot_be_same_as_old_password:
+    "New password cannot be same as old password",
+  failed_to_change_password: "Failed to change password",
+  error_during_password_change: "Error during password change",
+
+  logout_successful: "Logout successful",
+  failed_to_logout: "Failed to logout",
+  error_during_logout: "Error during logout",
+
+  profile_updated_successfully: "Profile updated successfully",
+  failed_to_update_profile: "Failed to update profile",
+  error_during_profile_edit: "Error during profile update",
+  no_changes_made: "No changes made",
+
+  email_already_exists: "Email already exists",
+  phone_number_already_exists: "Phone number already exists",
+
+  invalid_api_key: "Invalid API key",
+  token_required: "Token is required",
+  invalid_or_logged_out_token: "Invalid or logged out token",
+
+  validation_error: "Validation error",
+
+  token_expired: "Token expired",
+  invalid_token: "Invalid token",
+  authentication_error: "Authentication error",
+
+  invalid_token_payload: "Invalid token payload",
+  token_missing: "Token missing",
+
+  invalid_encrypted_data: "Invalid encrypted data",
+  decryption_failed: "Decryption failed"
+,
+
+  application_not_found: "Application not found",
+  application_status_updated_successfully: "Application status updated successfully",
+  applications_fetched_successfully: "Applications fetched successfully",
+  applied_jobs_fetched_successfully: "Applied jobs fetched successfully",
+  dashboard_stats: "Dashboard stats fetched successfully",
+  dashboard_stats_fetched_successfully: "Dashboard stats fetched successfully",
+  error_associating_skill: "Error associating skill",
+  error_creating_job: "Error creating job",
+  error_deleting_job: "Error deleting job",
+  error_during_view_profile: "Error during profile view",
+  error_fetching_applications: "Error fetching applications",
+  error_fetching_dashboard_stats: "Error fetching dashboard stats",
+  error_fetching_users: "Error fetching users",
+  error_updating_application_status: "Error updating application status",
+  error_updating_job: "Error updating job",
+  error_updating_user_status: "Error updating user status",
+  failed_to_delete_job: "Failed to delete job",
+  failed_to_update_application_status: "Failed to update application status",
+  failed_to_update_user_status: "Failed to update user status",
+  forbidden_access: "Forbidden access",
+  internal_server_error: "Internal server error",
+  invalid_skill_id: "Invalid skill id",
+  job_application_failed: "Job application failed",
+  job_applied_successfully: "Job applied successfully",
+  job_created_successfully: "Job created successfully",
+  job_deleted_successfully: "Job deleted successfully",
+  job_details: "Job details fetched successfully",
+  job_fetched_failed: "Failed to fetch job",
+  job_not_found: "Job not found",
+  job_updated_successfully: "Job updated successfully",
+  jobs_fetched_successfully: "Jobs fetched successfully",
+  no_applications_found: "No applications found",
+  no_data_found: "No data found",
+  no_jobs_found: "No jobs found",
+  no_stats_found: "No stats found",
+  no_user_found: "No user found",
+  profile_fetched_successfully: "Profile fetched successfully",
+  user_status_updated_successfully: "User status updated successfully",
+  users_fetched_successfully: "Users fetched successfully"
+};

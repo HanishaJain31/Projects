@@ -1,0 +1,124 @@
+//Car booking
+
+tbl_user
+id (PK)
+name
+email
+password
+role (user, admin)
+is_active
+is_delete
+created_at (timestamp)
+updated_at (timestamp)
+
+tbl_car
+id (PK)
+name
+brand
+color
+car_type
+fuel_type
+price
+is_active
+is_delete
+created_at
+updated_at
+
+tbl_car_booking
+id (PK)
+user_id (FK to tbl_user)
+car_id (FK to tbl_car)
+from_date (timestamp)
+to_date (timestamp)
+status (booked, cancelled, completed)
+created_at (timestamp)
+updated_at (timestamp)
+
+create table tbl_user (
+    id bigint primary key auto_increment,
+    name varchar(255) not null,
+    email varchar(255) not null unique,
+    password varchar(255) not null,
+    role enum('user', 'admin') not null,
+    is_active tinyint(1) default 1,
+    is_delete tinyint(1) default 0,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp on update current_timestamp
+);
+
+create table tbl_car (
+    id bigint primary key auto_increment,
+    name varchar(255) not null,
+    brand varchar(255) not null,
+    color enum('red', 'blue', 'black', 'white', 'silver') not null,
+    car_type enum('sedan', 'suv', 'hatchback', 'convertible', 'sports') not null,
+    fuel_type enum('petrol', 'diesel', 'electric', 'hybrid') not null,
+    price decimal(10, 2) not null,
+    is_active tinyint(1) default 1,
+    is_delete tinyint(1) default 0,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp on update current_timestamp
+);
+
+create table tbl_car_booking (
+    id bigint primary key auto_increment,
+    user_id bigint not null,
+    car_id bigint not null,
+    name varchar(255) not null,
+    car_type enum('sedan', 'suv', 'hatchback', 'convertible', 'sports') not null,
+    price decimal(10, 2) not null,
+    from_date timestamp not null,
+    to_date timestamp not null,
+    status enum('booked', 'cancelled', 'completed') not null,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp on update current_timestamp,
+    foreign key (user_id) references tbl_user(id),
+    foreign key (car_id) references tbl_car(id)
+);
+
+create table tbl_car_images (
+    id bigint primary key auto_increment,
+    car_id bigint not null,
+    image varchar(512) 
+    is_active tinyint(1) default 1,
+    is_delete tinyint(1) default 0,
+    created_at timestamp default current_timestamp,
+    updated_at timestamp default current_timestamp on update current_timestamp,
+    foreign key (car_id) references tbl_car(id) 
+);
+
+INSERT INTO tbl_car_images (car_id, image) VALUES
+(1, 'tesla1.png'),
+(1, 'tesla2.png'),
+(1, 'tesla3.png'),
+(2, 'honda1.png'),
+(2, 'honda2.png'),
+(3, 'ford1.png'),
+(3, 'ford2.png');
+
+
+INSERT INTO tbl_car (name, brand, color, car_type, fuel_type, price) VALUES
+('Model S', 'Tesla', 'red', 'sedan', 'electric', 799999.00),
+('Civic', 'Honda', 'blue', 'sedan', 'petrol', 199999.99),
+('Mustang', 'Ford', 'black', 'sports', 'petrol', 559999.99),
+('Camry', 'Toyota', 'white', 'sedan', 'hybrid', 249999.99),
+('X5', 'BMW', 'silver', 'suv', 'diesel', 609999.99);
+
+INSERT INTO tbl_user (name, email, password, country_code, phone_no, role) VALUES
+('Purvil Modi', 'purvil@gmail.com', 'purvil123', '+1', '1234567890', 'user'),
+('Sahil Mansuri', 'sahil@gmail.com', 'sahil123', '+1', '0987654321', 'user'),
+
+booking with slots datetime (with cancelled and completed status) and price in decimal(10, 2)
+user 1 is admin 
+
+INSERT INTO tbl_car_booking (user_id, car_id, name, car_type, price, from_date, to_date, status) VALUES
+(2, 1, 'Model S', 'sedan', 799999.00, '2024-07-01 10:00:00', '2024-07-05 10:00:00', 'booked'),
+(2, 2, 'Civic', 'sedan', 199999.99, '2024-07-03 12:00:00', '2024-07-04 12:00:00', 'cancelled'),
+(3, 3, 'Mustang', 'sports', 559999.99, '2024-07-02 14:00:00', '2024-07-06 14:00:00', 'completed'),
+(4, 4, 'Camry', 'sedan', 249999.99, '2024-07-05 16:00:00', '2024-07-10 16:00:00', 'booked'),
+(5, 5, 'X5', 'suv', 609999.99, '2024-07-01 18:00:00', '2024-07-03 18:00:00', 'booked'),
+(1, 2, 'Civic', 'sedan', 199999.99, '2024-07-10 10:00:00', '2024-07-12 10:00:00', 'booked'),
+(2, 3, 'Mustang', 'sports', 559999.99, '2024-07-15 12:00:00', '2024-07-20 12:00:00', 'booked'),
+(3, 4, 'Camry', 'sedan', 249999.99, '2024-07-18 14:00:00', '2024-07-22 14:00:00', 'booked'),
+(4, 5, 'X5', 'suv', 609999.99, '2024-07-20 16:00:00', '2024-07-25 16:00:00', 'booked'),
+(5, 1, 'Model S', 'sedan', 799999.00, '2024-07-25 18:00:00', '2024-07-30 18:00:00', 'booked');

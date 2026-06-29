@@ -1,0 +1,86 @@
+module.exports = {
+  signup_successful: "સાઇનઅપ સફળ થયું",
+  failed_to_create_user: "વપરાશકર્તા બનાવવામાં નિષ્ફળ",
+  error_during_signup: "સાઇનઅપ દરમિયાન ભૂલ થઈ",
+
+  login_successful: "લોગિન સફળ થયું",
+  user_not_found: "વપરાશકર્તા મળ્યો નથી",
+  invalid_password: "ખોટો પાસવર્ડ",
+  error_during_login: "લોગિન દરમિયાન ભૂલ થઈ",
+
+  password_changed_successfully: "પાસવર્ડ સફળતાપૂર્વક બદલાયો",
+  invalid_old_password: "જૂનો પાસવર્ડ ખોટો છે",
+  new_password_cannot_be_same_as_old_password:
+    "નવો પાસવર્ડ જૂના પાસવર્ડ જેવો હોઈ શકતો નથી",
+  failed_to_change_password: "પાસવર્ડ બદલવામાં નિષ્ફળ",
+  error_during_password_change: "પાસવર્ડ બદલતી વખતે ભૂલ થઈ",
+
+  logout_successful: "લોગઆઉટ સફળ થયું",
+  failed_to_logout: "લોગઆઉટ કરવામાં નિષ્ફળ",
+  error_during_logout: "લોગઆઉટ દરમિયાન ભૂલ થઈ",
+
+  profile_updated_successfully: "પ્રોફાઇલ સફળતાપૂર્વક અપડેટ થઈ",
+  failed_to_update_profile: "પ્રોફાઇલ અપડેટ કરવામાં નિષ્ફળ",
+  error_during_profile_edit: "પ્રોફાઇલ અપડેટ દરમિયાન ભૂલ થઈ",
+  no_changes_made: "કોઈ ફેરફાર કરવામાં આવ્યો નથી",
+
+  email_already_exists: "ઈમેલ પહેલેથી જ અસ્તિત્વમાં છે",
+  phone_number_already_exists: "ફોન નંબર પહેલેથી જ અસ્તિત્વમાં છે",
+
+  invalid_api_key: "અમાન્ય API કી",
+  token_required: "ટોકન જરૂરી છે",
+  invalid_or_logged_out_token: "અમાન્ય અથવા લોગઆઉટ કરાયેલ ટોકન",
+
+  validation_error: "માન્યતા ભૂલ",
+
+  token_expired: "ટોકન સમાપ્ત થઈ ગયું છે",
+  invalid_token: "અમાન્ય ટોકન",
+  authentication_error: "પ્રમાણીકરણ ભૂલ",
+
+  invalid_token_payload: "અમાન્ય ટોકન ડેટા",
+  token_missing: "ટોકન ઉપલબ્ધ નથી",
+
+  invalid_encrypted_data: "અમાન્ય એન્ક્રિપ્ટેડ ડેટા",
+  decryption_failed: "ડિક્રિપ્શન નિષ્ફળ ગયું"
+,
+
+  application_not_found: "અરજી મળી નથી",
+  application_status_updated_successfully: "અરજીની સ્થિતિ સફળતાપૂર્વક અપડેટ થઈ",
+  applications_fetched_successfully: "અરજીઓ સફળતાપૂર્વક મળી",
+  applied_jobs_fetched_successfully: "અરજી કરેલી નોકરીઓ સફળતાપૂર્વક મળી",
+  dashboard_stats: "ડેશબોર્ડ આંકડા સફળતાપૂર્વક મળ્યા",
+  dashboard_stats_fetched_successfully: "ડેશબોર્ડ આંકડા સફળતાપૂર્વક મળ્યા",
+  error_associating_skill: "કૌશલ્ય જોડતી વખતે ભૂલ થઈ",
+  error_creating_job: "નોકરી બનાવતી વખતે ભૂલ થઈ",
+  error_deleting_job: "નોકરી કાઢતી વખતે ભૂલ થઈ",
+  error_during_view_profile: "પ્રોફાઇલ જોતી વખતે ભૂલ થઈ",
+  error_fetching_applications: "અરજીઓ મેળવતી વખતે ભૂલ થઈ",
+  error_fetching_dashboard_stats: "ડેશબોર્ડ આંકડા મેળવતી વખતે ભૂલ થઈ",
+  error_fetching_users: "વપરાશકર્તાઓ મેળવતી વખતે ભૂલ થઈ",
+  error_updating_application_status: "અરજીની સ્થિતિ અપડેટ કરતી વખતે ભૂલ થઈ",
+  error_updating_job: "નોકરી અપડેટ કરતી વખતે ભૂલ થઈ",
+  error_updating_user_status: "વપરાશકર્તાની સ્થિતિ અપડેટ કરતી વખતે ભૂલ થઈ",
+  failed_to_delete_job: "નોકરી કાઢવામાં નિષ્ફળ",
+  failed_to_update_application_status: "અરજીની સ્થિતિ અપડેટ કરવામાં નિષ્ફળ",
+  failed_to_update_user_status: "વપરાશકર્તાની સ્થિતિ અપડેટ કરવામાં નિષ્ફળ",
+  forbidden_access: "પ્રવેશ મનાઈ છે",
+  internal_server_error: "આંતરિક સર્વર ભૂલ",
+  invalid_skill_id: "અમાન્ય કૌશલ્ય આઈડી",
+  job_application_failed: "નોકરીની અરજી નિષ્ફળ ગઈ",
+  job_applied_successfully: "નોકરી માટે સફળતાપૂર્વક અરજી થઈ",
+  job_created_successfully: "નોકરી સફળતાપૂર્વક બનાવાઈ",
+  job_deleted_successfully: "નોકરી સફળતાપૂર્વક કાઢી નાખવામાં આવી",
+  job_details: "નોકરીની વિગતો સફળતાપૂર્વક મળી",
+  job_fetched_failed: "નોકરી મેળવવામાં નિષ્ફળ",
+  job_not_found: "નોકરી મળી નથી",
+  job_updated_successfully: "નોકરી સફળતાપૂર્વક અપડેટ થઈ",
+  jobs_fetched_successfully: "નોકરીઓ સફળતાપૂર્વક મળી",
+  no_applications_found: "કોઈ અરજી મળી નથી",
+  no_data_found: "કોઈ ડેટા મળ્યો નથી",
+  no_jobs_found: "કોઈ નોકરી મળી નથી",
+  no_stats_found: "કોઈ આંકડા મળ્યા નથી",
+  no_user_found: "કોઈ વપરાશકર્તા મળ્યો નથી",
+  profile_fetched_successfully: "પ્રોફાઇલ સફળતાપૂર્વક મળી",
+  user_status_updated_successfully: "વપરાશકર્તાની સ્થિતિ સફળતાપૂર્વક અપડેટ થઈ",
+  users_fetched_successfully: "વપરાશકર્તાઓ સફળતાપૂર્વક મળ્યા"
+};
